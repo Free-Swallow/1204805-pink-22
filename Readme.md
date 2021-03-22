@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Николай Егоров](https://up.htmlacademy.ru/adaptive/22/user/1204805).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
