@@ -3,53 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__top">
-        <div class="header-logo">
-          <a class="header-logo__link">
+        <div class="main-header__logo">
+          <a href="index.html" class="main-header__logo__link">
             <img src="" alt="" title="" width="" height="">
           </a>
         </div>
-        <nav class="main-nav">
-          <button class="header-nav__toggle" type="button">
+        <nav class="main-header__nav">
+          <button class="main-header__nav__toggle" type="button">
             <span class="visually-hidden">открыть меню</span>
           </button>
-          <ul class="main-nav__list site-list">
+          <ul class="main-header__nav__list site-list">
             <li class="site-list__item">
-              <a href="#">
+              <a href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="catalog.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a href="#">
+              <a>
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
           </ul>
         </nav>
       </div>
-      <h1 class="main__title">Конкурс на самое
+      <h1 class="main-header__title">Конкурс на самое
         безбашенное
         путешествие с Пинк
       </h1>
     </header>
-    <main>
-      <p class="form-subtitle__container form__subtitle">Поделитесь своей историей и получите
+    <main class="main-form">
+      <h2 class="main-form__subtitle">Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
-      </p>
+      </h2>
       <form action="https://echo.htmlacademy.ru/courses" method="get">
         <div class="name-container">
           <fieldset>
@@ -64,7 +65,7 @@
             </label>
           </fieldset>
         </div>
-        <div class="achievement-container">
+        <div class="achievement">
           <fieldset>
             <legend>
               Ваши безбашенные достижения в путешествии
@@ -97,7 +98,7 @@
             </ul>
           </fieldset>
         </div>
-        <div class="user-contacts__container">
+        <div class="user-contacts">
           <fieldset>
             <label class="user-contacts__phone">Номер телефона
               <input type="tel" name="phone" placeholder="Номер, пожалуйста"></label>
@@ -106,7 +107,7 @@
             </label>
           </fieldset>
         </div>
-        <div class="devices__container">
+        <div class="devices">
           <fieldset>
             <legend>С каким приложением путешествовали?</legend>
             <ul class="devices__list">
@@ -125,7 +126,7 @@
             </ul>
           </fieldset>
         </div>
-        <div class="emotions__container">
+        <div class="emotions">
           <label>Опишите свои эмоции
             <textarea name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </label>
@@ -134,8 +135,8 @@
         <p><span>*</span> — обязательные поля</p>
       </form>
     </main>
-    <footer>
-      <div class="footer__container">
+    <footer class="main-footer">
+      <div class="main-footer__container">
         <a href="" class="logo-footer">
           <img src="">
         </a>
@@ -150,7 +151,7 @@
 
           </a>
         </section>
-        <a href="" class="copyright-position copyright-footer">Разработано<img src=""></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-position copyright-footer">Разработано<img src=""></a>
       </div>
     </footer>
   </body>
