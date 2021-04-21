@@ -1,12 +1,233 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-header__top">
+        <div class="main-header__logo">
+          <a class="main-header__link">
+            <img src="img/logo-mobile-header.svg" alt="Логотп Pink" title="" width="74" height="23">
+          </a>
+        </div>
+        <nav class="main-header__nav nav">
+          <button class="nav__toggle" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="visually-hidden">открыть меню</span>
+          </button>
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p>Взгляни на жизнь иначе!</p>
+      <section class="download-add">
+        <button type="button">
+          Скачать приложение
+        </button>
+        <ul class="download-add__list">
+          <li>
+            <a href="#">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
 
+            </a>
+          </li>
+          <li>
+            <a href="#">
+
+            </a>
+          </li>
+        </ul>
+        <p class="download-add__paragraph">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+    </header>
+    <main>
+      <section class="offers">
+        <div class="offers__container">
+          <h1 class="offers__title">Устали от серости мегаполиса?
+            Нам есть, что вам
+            предложить!
+          </h1>
+          <ul class="offers__list">
+            <li>
+              <article class="offers__cards">
+                <img src="">
+                <h3 class="offers__title">
+                  Поднимает настроение
+                </h3>
+                <p class="offers__paragraph">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <img src="">
+                <h3 class="offers__title">
+                  Меняет мир вокруг
+                </h3>
+                <p class="offers__paragraph">
+                  Сделайте снимок и
+                  украсьте его смайликом
+                  или текстовой подписью, чтобы усилить эффект
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <img src="">
+                <h3 class="offers__title">
+                  Заводит новых друзей
+                </h3>
+                <p class="offers__paragraph">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </article>
+            </li>
+          </ul>
+          <section class="researchs">
+            <img src="" class="researchs__image">
+            <h3 class="researchs__title">Эффект на 24 часа!</h3>
+            <p class="researchs__paragraph">Британские ученые провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a href="#" class="researchs__link">Узнать больше об исследовании</a>
+          </section>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__container slider">
+          <h2 class="visually-hidden">Отзывы о нас</h2>
+          <div class="slider__controls">
+            <button class="slider__control" type="button">Left</button>
+            <button class="slider__control" type="button">Right</button>
+          </div>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <p class="slider__name">Николай Петров
+                <span>25 лет, водитель трамвая</span>
+              </p>
+              <p class="slider__paragraph">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="slider__item">
+              <p></p>
+              <p></p>
+            </li>
+            <li class="slider__item">
+              <p></p>
+              <p></p>
+            </li>
+          </ul>
+          <p class="slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__container">
+          <table class="price__table">
+            <tr>
+              <th></th>
+              <th class="price__tarif" scope="col">База <span>1,99 USD</span></th>
+              <th class="price__tarif" scope="col">Стандарт <span>3,99 USD</span></th>
+              <th class="price__tarif" scope="col">Анлим <span>9,99 USD</span></th>
+            </tr>
+            <tr>
+              <th scope="row">Розовый фильтр</th>
+              <td><img src=""></td>
+              <td><img src=""></td>
+              <td><img src=""></td>
+            </tr>
+            <tr>
+              <th scope="row">Смайлики</th>
+              <td><img src="" alt=""></td>
+              <td><img src="" alt=""></td>
+              <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+              <th scope="row">Комментарии</th>
+              <td><img src="" alt=""></td>
+              <td><img src="" alt=""></td>
+              <td><img src="" alt=""></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="contact-us">
+        <div class="contact-us__container">
+          <h2>Остались вопросы? Свяжитесь с нами!</h2>
+          <p>
+            Звоните:
+            <a href="tel:+78125556666" class="contact-us__phone">
+              +7 (812) 555-66-66
+            </a>
+          </p>
+          <p>
+            Пишите:
+            <a href="mailto:mail@htmlacademy.ru" class="contact-us__email">
+              mail@htmlacademy.ru
+            </a>
+          </p>
+          <p>
+            Приезжайте в гости:
+            <a href="https://goo.gl/maps/oTR74DVvtusqRLyC8" class="contact-us__map-link">
+              ул. Большая Конюшенная, 19/8
+            </a>
+          </p>
+        </div>
+        <img src="">
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__container">
+        <a href="" class="logo-footer">
+          <img src="">
+        </a>
+        <section class="soc-net">
+          <a href="">
+
+          </a>
+          <a href="">
+
+          </a>
+          <a href="">
+
+          </a>
+        </section>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-position copyright-footer">Разработано<img src=""></a>
+      </div>
+    </footer>
   </body>
 </html>
