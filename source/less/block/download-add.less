@@ -1,12 +1,17 @@
 .download-add {
   background-color: @dark-background;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .download-add__list {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 280px;
 }
 
 .download-add__list li {
@@ -19,4 +24,11 @@
   line-height: 24px;
   font-weight: 300;
   color: white;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+  }
 }

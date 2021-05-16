@@ -1,18 +1,24 @@
 .main-header {
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   height: 462px;
   background-image: url("../../img/back-desktop.jpg");
   background-color: @dark-background;
   background-repeat: no-repeat;
   background-position: center;
-}
 
-@media (min-width: @tablet-width) {
-  .main-header {
-    width: 620px;
+  @media (min-width: @tablet-width) {
+    .main-header {
+      min-width: 620px;
+      height: 762px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 853px;
   }
 }
+
 
 .main-title {
   display: block;
@@ -23,9 +29,22 @@
   line-height: 28px;
   color: white;
   padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .main-header__title {
+  display: block;
+  margin: 0 auto;
   font-weight: 300;
   font-style: normal;
   font-size: 24px;

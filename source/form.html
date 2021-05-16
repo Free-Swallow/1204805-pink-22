@@ -49,101 +49,143 @@
         путешествие с Пинк
       </h1>
     </header>
-    <main class="main-form">
+    <main class="main-form wrapper">
       <h2 class="main-form__subtitle">Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
       </h2>
-      <form action="https://echo.htmlacademy.ru/courses" method="get">
+      <form class="form" action="https://echo.htmlacademy.ru/courses" method="get">
         <div class="name-container">
-          <fieldset class="form-fieldset">
-            <label><span class="form__subtitle">Фамилия</span>
-              <input class="input-field" type="text" name="surname" placeholder="Укажите фамилию *" required="required">
+          <fieldset class="form__fieldset name-fieldset">
+            <label>
+              <span class="form__subtitle">
+                Фамилия
+              </span>
+              <input class="form__input-field" type="text" name="surname" placeholder="Укажите фамилию *" required="required">
             </label>
-            <label><span class="form__subtitle">Имя</span>
-              <input class="input-field" type="text" name="name" placeholder="Введите ваше имя *" required="required">
+            <label>
+              <span class="form__subtitle">Имя</span>
+              <input class="form__input-field" type="text" name="name" placeholder="Введите ваше имя *" required="required">
             </label>
-            <label><span class="form__subtitle">Отчество</span>
-              <input class="input-field" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            <label>
+              <span class="form__subtitle">
+                Отчество
+              </span>
+              <input class="form__input-field" type="text" name="middle-name" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
         </div>
         <div class="achievement">
-          <fieldset class="form-fieldset">
+          <fieldset class="form__fieldset achievement__fieldset wrapper">
             <legend>
               Ваши безбашенные достижения в путешествии
             </legend>
             <ul class="achievement__list">
               <li class="achievement__item">
                 <input type="checkbox" name="selfie" id="selfie-id" class="achievement__checkbox" checked>
-                <label for="selfie-id" class="achievement__description">Сделал селфи с акулой</label>
+                <label for="selfie-id" class="achievement__description">
+                  Сделал селфи с акулой
+                </label>
               </li>
               <li class="achievement__item">
                 <input type="checkbox" name="beach" id="beach-id" class="achievement__checkbox" checked>
-                <label for="beach-id" class="achievement__description">Обгорел на пляже</label>
+                <label for="beach-id" class="achievement__description">
+                  Обгорел на пляже
+                </label>
               </li>
               <li class="achievement__item">
                 <input type="checkbox" name="chuck" id="chuck-id" class="achievement__checkbox">
-                <label for="chuck-id" class="achievement__description">Видел Чака Норриса</label>
+                <label for="chuck-id" class="achievement__description">
+                  Видел Чака Норриса
+                </label>
               </li>
               <li class="achievement__item">
                 <input type="checkbox" name="souvenirs" id="souvenirs-id" class="achievement__checkbox">
-                <label for="souvenirs-id" class="achievement__description">Накупил сувениров</label>
+                <label for="souvenirs-id" class="achievement__description">
+                  Накупил сувениров
+                </label>
               </li>
               <li class="achievement__item">
                 <input type="checkbox" name="tower" id="tower-id" class="achievement__checkbox" checked>
-                <label for="tower-id" class="achievement__description">Удержал башню</label>
+                <label for="tower-id" class="achievement__description">
+                  Удержал башню
+                </label>
               </li>
               <li class="achievement__item">
                 <input type="checkbox" name="hotel" id="hotel-id" class="achievement__checkbox">
-                <label for="hotel-id" class="achievement__description">Разгромил отель</label>
+                <label for="hotel-id" class="achievement__description">
+                  Разгромил отель
+                </label>
               </li>
             </ul>
           </fieldset>
         </div>
         <div class="user-contacts">
-          <fieldset class="form-fieldset">
-            <label class="user-contacts__phone"><span class="form__subtitle">Номер телефона</span>
-              <input class="input-field" type="tel" name="phone" placeholder="Номер, пожалуйста"></label>
-            <label class="user-contacts__email"><span class="form__subtitle">Адрес почты</span>
-              <input class="input-field" type="email" name="email" placeholder="Введите почту *" required="required">
+          <fieldset class="form__fieldset user-contacts__fieldset">
+            <label class="user-contacts__phone">
+              <span class="form__subtitle">
+                Номер телефона
+              </span>
+              <input class="form__input-field" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="user-contacts__email">
+              <span class="form__subtitle">
+                Адрес почты
+              </span>
+              <input class="form__input-field" type="email" name="email" placeholder="Введите почту *" required="required">
             </label>
           </fieldset>
         </div>
         <div class="devices">
-          <fieldset class="form-fieldset">
+          <fieldset class="form__fieldset">
             <legend>С каким приложением путешествовали?</legend>
             <ul class="devices__list">
               <li>
                 <input type="radio" name="devices" value="ios" class="devices__radio" id="ios-id" checked>
-                <label for="ios-id">Pink для iOS</label>
+                <label for="ios-id" class="devices__label">
+                  Pink для iOS
+                </label>
               </li>
               <li>
                 <input type="radio" name="devices" value="android" class="devices__radio" id="android-id">
-                <label for="android-id">Pink на Android</label>
+                <label for="android-id" class="devices__label">
+                  Pink на Android
+                </label>
               </li>
               <li>
                 <input type="radio" name="devices" value="windows" class="devices__radio" id="windows-id">
-                <label for="windows-id">Windows Phone</label>
+                <label for="windows-id" class="devices__label">
+                  Windows Phone
+                </label>
               </li>
             </ul>
           </fieldset>
         </div>
         <div class="emotions">
-          <label><span class="emotions__subtitles">Опишите свои эмоции</span>
+          <label>
+            <span class="emotions__subtitles">
+              Опишите свои эмоции
+            </span>
             <textarea class="emotions__comment" name="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </label>
         </div>
-        <button class="button-type-two" type="submit">Отправить форму</button>
-        <p class="add-information"><span>*</span> — обязательные поля</p>
+        <button class="button--form" type="submit">
+          Отправить форму
+        </button>
+        <p class="form__add-information">
+          <span>
+            *
+          </span>
+          — обязательные поля
+        </p>
       </form>
     </main>
     <footer class="main-footer">
       <div class="main-footer__container">
-        <a href="index.html" class="logo-footer">
+        <a href="index.html" class="main-footer__logo">
           <img src="img/logo-mobile-footer.svg" width="145" height="40" alt="">
         </a>
-        <section class="soc-net">
+        <section class="social-net">
           <a href="">
             <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.5641 0.168904C12.2458 -0.0461515 12.9837 -0.0560928 13.6719 0.140507C14.3602 0.337107 14.9633 0.730138 15.3947 1.26319C16.1053 1.05385 16.8055 0.815959 17.5263 0.606617C17.5164 0.925848 17.4299 1.23907 17.2732 1.52372C17.1165 1.80837 16.8935 2.05738 16.6201 2.2528C16.8726 2.27877 17.1281 2.25112 17.3673 2.17197C17.6064 2.09281 17.8228 1.96424 18 1.79606C17.901 2.20987 17.6999 2.59695 17.4123 2.92708C17.1247 3.2572 16.7585 3.52144 16.3421 3.69916C16.095 9.96988 12.9748 14.1662 5.65332 13.9949H5.14874C4.70595 13.9949 0.731121 13.5667 0 12.2441C1.75201 12.4899 3.53888 12.0976 4.98398 11.1498C3.95423 10.8643 2.13158 10.7026 1.82265 8.40934C2.2108 8.54337 2.6321 8.57306 3.03776 8.49498C1.76087 7.70519 0.339817 7.0391 0.422197 4.99327C0.819634 5.29882 1.3269 5.45507 1.84325 5.43098C1.10183 5.20261 -0.24714 2.30989 0.895881 0.825474C2.82151 2.54778 4.86041 4.17493 8.48512 4.3367C8.71167 2.20522 9.68993 0.777896 11.5641 0.168904Z" fill="#D22856"/>
@@ -160,7 +202,7 @@
             </svg>
           </a>
         </section>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-footer">Разработано<img src="img/htmlacademy.svg" width="27" height="34"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__copyright">Разработано<img src="img/htmlacademy.svg" width="27" height="34"></a>
       </div>
     </footer>
   </body>

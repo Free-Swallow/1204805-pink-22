@@ -11,9 +11,9 @@
       <div class="main-header__top">
         <div class="main-header__logo">
           <a class="main-header__link">
-            <img src="img/logo-mobile-header.svg" class="header-logo__mobile" alt="Логотп Pink" title="" width="74" height="23">
-            <img src="img/logo-tablet-header.svg" class="header-logo__tablet" alt="Логотп Pink" title="" width="145" height="40">
-            <img src="img/logo-desktop-header.svg" class="header-logo__desktop" alt="Логотп Pink" title="" width="147" height="40">
+            <img src="img/logo-mobile-header.svg" class="header-logo__img header-logo__img--mobile" alt="Логотп Pink" title="" width="74" height="23">
+            <img src="img/logo-tablet-header.svg" class="header-logo__img header-logo__img--tablet" alt="Логотп Pink" title="" width="145" height="40">
+            <img src="img/logo-desktop-header.svg" class="header-logo__img header-logo__img--desktop" alt="Логотп Pink" title="" width="147" height="40">
           </a>
         </div>
         <nav class="main-header__nav nav">
@@ -51,7 +51,7 @@
     </header>
     <main>
       <section class="download-add">
-        <a href="#" class="button-type-one" type="button">
+        <a href="#" class="button" type="button">
           Скачать приложение
         </a>
         <ul class="download-add__list">
@@ -70,7 +70,7 @@
         </p>
       </section>
       <section class="offers">
-        <div class="offers__container">
+        <div class="offers__container wrapper">
           <h2 class="offers__title">Устали от серости мегаполиса?
             Нам есть, что вам
             предложить!
@@ -114,25 +114,27 @@
           </ul>
           <section class="researchs">
             <img src="" class="researchs__image">
-            <h3 class="researchs__title">Эффект на 24 часа!</h3>
-            <p class="researchs__paragraph">Британские ученые провели исследования и доказали,
-              что положительный эффект от использования приложения длится целые сутки!
-            </p>
-            <a href="#" class="researchs__link">Узнать больше об исследовании</a>
+            <div class="researchs-container">
+              <h3 class="researchs__title">Эффект на 24 часа!</h3>
+              <p class="researchs__paragraph">Британские ученые провели исследования и доказали,
+                что положительный эффект от использования приложения длится целые сутки!
+              </p>
+              <a href="#" class="researchs__link">Узнать больше об исследовании</a>
+            </div>
           </section>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews wrapper">
         <div class="reviews__container slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <div class="slider__controls">
-            <button class="slider__control visually-hidden" type="button">Left</button>
-            <button class="slider__control visually-hidden" type="button">Right</button>
+            <button class="slider__control" type="button">Left</button>
+            <button class="slider__control" type="button">Right</button>
           </div>
           <ul class="slider__list">
             <li class="slider__item">
               <p class="slider__name">Николай Петров
-                <span class="visually-hidden">25 лет, водитель трамвая</span>
+                <span>25 лет, водитель трамвая</span>
               </p>
               <p class="slider__paragraph">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
@@ -153,7 +155,7 @@
         </div>
       </section>
       <section class="price">
-        <div class="price__container">
+        <div class="price__container wrapper">
           <table class="price__table" cellspacing="1">
             <tr>
               <th></th>
@@ -183,36 +185,44 @@
         </div>
       </section>
       <section class="contact-us">
-        <div class="contact-us__container">
+        <div class="contact-us__container wrapper">
           <h2 class="contact-us__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <p>
-            Звоните:
-            <a href="tel:+78125556666" class="contact-us__link contact-us__phone">
-              +7 (812) 555-66-66
-            </a>
-          </p>
-          <p>
-            Пишите:
-            <a href="mailto:mail@htmlacademy.ru" class="contact-us__link contact-us__email">
-              mail@htmlacademy.ru
-            </a>
-          </p>
-          <p>
-            Приезжайте в гости:
-            <a href="https://goo.gl/maps/oTR74DVvtusqRLyC8" class="contact-us__link contact-us__map-link">
-              ул. Большая Конюшенная, 19/8
-            </a>
-          </p>
+          <ul class="contact-us-list">
+            <li>
+              <p>
+                Звоните:
+                <a href="tel:+78125556666" class="contact-us__link contact-us__phone">
+                  +7 (812) 555-66-66
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                Пишите:
+                <a href="mailto:mail@htmlacademy.ru" class="contact-us__link contact-us__email">
+                  mail@htmlacademy.ru
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                Приезжайте в гости:
+                <a href="https://goo.gl/maps/oTR74DVvtusqRLyC8" class="contact-us__link contact-us__map-link">
+                  ул. Большая Конюшенная, 19/8
+                </a>
+              </p>
+            </li>
+          </ul>
         </div>
-        <img src="img/map.png" width="320" height="200" alt="Мы на карте!">
+        <img class="contact-us__map" src="img/map.png" width="320" height="200" alt="Мы на карте!">
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__container">
-        <a class="logo-footer">
+      <div class="main-footer__container wrapper">
+        <a class="main-footer__logo">
           <img src="img/logo-mobile-footer.svg" width="145" height="40" alt="">
         </a>
-        <section class="soc-net">
+        <section class="social-net">
           <a href="">
             <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.5641 0.168904C12.2458 -0.0461515 12.9837 -0.0560928 13.6719 0.140507C14.3602 0.337107 14.9633 0.730138 15.3947 1.26319C16.1053 1.05385 16.8055 0.815959 17.5263 0.606617C17.5164 0.925848 17.4299 1.23907 17.2732 1.52372C17.1165 1.80837 16.8935 2.05738 16.6201 2.2528C16.8726 2.27877 17.1281 2.25112 17.3673 2.17197C17.6064 2.09281 17.8228 1.96424 18 1.79606C17.901 2.20987 17.6999 2.59695 17.4123 2.92708C17.1247 3.2572 16.7585 3.52144 16.3421 3.69916C16.095 9.96988 12.9748 14.1662 5.65332 13.9949H5.14874C4.70595 13.9949 0.731121 13.5667 0 12.2441C1.75201 12.4899 3.53888 12.0976 4.98398 11.1498C3.95423 10.8643 2.13158 10.7026 1.82265 8.40934C2.2108 8.54337 2.6321 8.57306 3.03776 8.49498C1.76087 7.70519 0.339817 7.0391 0.422197 4.99327C0.819634 5.29882 1.3269 5.45507 1.84325 5.43098C1.10183 5.20261 -0.24714 2.30989 0.895881 0.825474C2.82151 2.54778 4.86041 4.17493 8.48512 4.3367C8.71167 2.20522 9.68993 0.777896 11.5641 0.168904Z" fill="#D22856"/>
@@ -229,7 +239,7 @@
             </svg>
           </a>
         </section>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-footer">Разработано<img src="img/htmlacademy.svg" width="27" height="34"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__copyright">Разработано<img src="img/htmlacademy.svg" width="27" height="34"></a>
       </div>
     </footer>
   </body>

@@ -1,9 +1,37 @@
+// .contact-us__container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
 .contact-us__title {
   font-weight: 300;
   font-style: normal;
   font-size: 24px;
   line-height: 28px;
   color: @basic-dark;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 370px;
+  }
+}
+
+.contact-us-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.contact-us-list li {
+  width: 250px;
 }
 
 .contact-us__container p {
@@ -12,6 +40,10 @@
   font-size: 18px;
   line-height: 24px;
   color: @basic-dark;
+
+  @media (min-width: @tablet-width) {
+    min-width: 240px;
+  }
 }
 
 .contact-us__link {
@@ -20,4 +52,8 @@
   font-size: 24px;
   line-height: 33px;
   color: @raspeberry-color;
+}
+
+.contact-us__map {
+  margin: 0 auto;
 }

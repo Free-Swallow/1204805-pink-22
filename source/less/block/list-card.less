@@ -1,3 +1,24 @@
+.list-card {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
 .list-card li {
   list-style: none;
+  margin: 0 auto;
 }
+
+.page__subtitle {
+  display: block;
+  margin: 0 auto;
+}
+

@@ -2,35 +2,34 @@
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
-  width: 280px;
-  min-height: 66px;
+  min-width: 320px;
   padding: 0 20px;
 
-  .header-logo__tablet,
-  .header-logo__desktop {
+  .header-logo__img--tablet,
+  .header-logo__img--desktop {
     display: none;
   }
 
   @media (min-width: @tablet-width) {
-    .main-header__top {
-      min-width: 620px;
-    }
-
-    .header-logo__mobile {
+    .header-logo__img--mobile {
       display: none;
     }
 
-    .header-logo__tablet {
+    .header-logo__img--tablet {
       display: block;
     }
   }
 
   @media (min-width: @desktop-width) {
-    .header-logo__tablet {
+    .main-header__top {
+      padding: 0 130px;
+    }
+
+    .header-logo__img--tablet {
       display: none;
     }
 
-    .header-logo__desktop {
+    .header-logo__img--desktop {
       display: block;
     }
   }
