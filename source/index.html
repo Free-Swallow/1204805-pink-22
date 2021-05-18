@@ -9,49 +9,51 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__top">
-        <div class="main-header__logo">
-          <a class="main-header__link">
-            <img src="img/logo-mobile-header.svg" class="header-logo__img header-logo__img--mobile" alt="Логотп Pink" title="" width="74" height="23">
-            <img src="img/logo-tablet-header.svg" class="header-logo__img header-logo__img--tablet" alt="Логотп Pink" title="" width="145" height="40">
-            <img src="img/logo-desktop-header.svg" class="header-logo__img header-logo__img--desktop" alt="Логотп Pink" title="" width="147" height="40">
-          </a>
+        <div class="main-header-top__container wrapper">
+          <div class="main-header__logo">
+            <a class="main-header__link">
+              <img src="img/logo-mobile-header.svg" class="main-header__img main-header__img--mobile" alt="Логотп Pink" title="" width="74" height="23">
+              <img src="img/logo-tablet-header.svg" class="main-header__img main-header__img--tablet" alt="Логотп Pink" title="" width="145" height="40">
+              <img src="img/logo-desktop-header.svg" class="main-header__img main-header__img--desktop" alt="Логотп Pink" title="" width="147" height="40">
+            </a>
+          </div>
+          <nav class="main-header__nav nav nav--close">
+            <button class="nav__toggle" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="visually-hidden">открыть меню</span>
+            </button>
+            <ul class="nav__list site-list">
+              <li class="site-list__item">
+                <a>
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru" target="_blank">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-header__nav nav">
-          <button class="nav__toggle" type="button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="visually-hidden">открыть меню</span>
-          </button>
-          <ul class="nav__list site-list">
-            <li class="site-list__item">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru" target="_blank">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
       <h1 class="main-title">Взгляни на жизнь иначе!</h1>
     </header>
     <main>
       <section class="download-add">
-        <a href="#" class="button" type="button">
+        <a href="#" class="button">
           Скачать приложение
         </a>
         <ul class="download-add__list">
@@ -156,7 +158,7 @@
       </section>
       <section class="price">
         <div class="price__container wrapper">
-          <table class="price__table" cellspacing="1">
+          <table class="price__table">
             <tr>
               <th></th>
               <th class="price__rate-name" scope="col">База <span>1,99 USD</span></th>
