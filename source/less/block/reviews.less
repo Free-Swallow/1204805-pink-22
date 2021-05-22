@@ -1,8 +1,54 @@
+.reviews {
+  position: relative;
+}
+
 .slider__control {
   display: none;
 
   @media (min-width: @desktop-width) {
     display: inline-block;
+  }
+}
+
+.slider__control-left {
+  position: absolute;
+  width: 22px;
+  height: 41px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: 30px;
+  left: 150px;
+}
+
+.slider__control-right {
+  position: absolute;
+  width: 22px;
+  height: 41px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: 30px;
+  right: 150px;
+}
+
+.slider__list {
+  padding: 0;
+
+  @media (min-width: @desktop-width) {
+    margin: 170px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__list::before {
+  position: absolute;
+  content: "";
+  width: 79px;
+  height: 63px;
+  background-image: url("../../img/quotes.svg");
+  top: -110px;
+  left: 46%;
   }
 }
 
@@ -19,6 +65,7 @@
   font-size: 18px;
   line-height: 30px;
   color: black;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -39,9 +86,34 @@
 }
 
 .slider__paragraph {
+  max-width: 688px;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 30px;
   color: @basic-dark;
+  text-align: center;
+}
+
+.slider__toggles {
+  text-align: center;
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: fade(@basic-dark, 30%);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slider__toggle--current {
+  width: 9px;
+  height: 9px;
+  background-color: fade(@basic-white, 100%);
+  border: 3px solid fade(@basic-dark, 100%);
+  cursor: default;
 }

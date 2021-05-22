@@ -1,5 +1,9 @@
 .offers {
   font-family: @open-sans;
+  background-image: url('../../img/grey-background98.png');
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-size: cover;
 }
 
 .offers__title {
@@ -8,6 +12,7 @@
   font-size: 24px;
   line-height: 28px;
   color: @basic-dark;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -20,17 +25,36 @@
   }
 }
 
+.offers__container-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.offers__container-bottom img {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .offers__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    grid-gap: 60px;
   }
 }
 
 .offers__list li {
   list-style: none;
+  text-align: left;
 }
 
 .offers__subtitle {
